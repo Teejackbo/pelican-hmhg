@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway|Roboto" rel="stylesheet" />
+    <link href="{{ SITEURL }}/theme/css/hmhg.css" type="text/css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Holcombe Moor Heritage Group</title>
+    {% endblock head %}
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1>Holcombe Moor Heritage Group</h1>
+      </center>
+    </header>
+    <nav>
+      <center>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Events</a>
+        <a href="#">Contact Us</a>
+      </center>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <footer>
+      <div class="row">
+        <div class="col33">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="http://www.ramsbottomheritage.org.uk/">Ramsbottom Heritage Society</a></li>
+            <li><a href="http://www.mellorarchaeology-2000-2010.org.uk/">Mellor Archaeology</a></li>
+            <li><a href="http://www.buryarchaeologicalgroup.co.uk/Home.html">Bury Archaeological Society</a></li>
+            <li><a href="http://www.lancashireatwar.co.uk/">Lancashire at War</a></li>
+            <li><a href="https://lancashirepast.com/lancashire-past/">Lancashire Past</a></li>
+          </ul>
+        </div>
+        <div class="col33">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="http://heritagephotoarchive.co.uk/">Heritage Photo Archive</a></li>
+            <li><a href="http://www.glossopheritage.co.uk/glas.htm">Glossop Heritage</a></li>
+            <li><a href="http://www.salford.ac.uk/environment-life-sciences/research/applied-archaeology">Salford Applied Archaeology</a></li>
+            <li><a href="http://www.boltonmuseums.org.uk/">Bolton Museums</a></li>
+            <li><a href="http://www.westhoughtonhistorygroup.org.uk/Westhoughton_History_Group/Home.html">Westhoughton History Group</a></li>
+          </ul>
+        </div>
+        <div class="col33">
+          <h2>Contact Us</h2>
+          <i class="fa fa-facebook-square fa-3x"></i>
+          <i class="fa fa-twitter-square fa-3x"></i>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">Copyright 2017 Holcombe Moor Heritage Group</div>
+  </body>
+</html>

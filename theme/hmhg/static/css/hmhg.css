@@ -1,0 +1,194 @@
+html {
+  box-sizing: border-box;
+}
+
+a {
+  color: #42af41;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 100%;
+  background-color: #3e3e3f;
+}
+
+body {
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+header h1 {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 2.5em;
+  margin: auto;
+  padding: 2% 0 2% 0;
+}
+
+nav {
+  width: 100%;
+  background-color: #42af41;
+  padding: 1.3% 0;
+}
+
+nav a {
+  padding: 0.7% 1%;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  border-radius: 3px;
+  background-color: #328732;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 20em;
+  background-image: url(/theme/images/valley.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+  margin: 5% 12.5%;
+  text-align: center;
+}
+
+.col25 {
+  width: 20%;
+  display: inline-block;
+  margin: 0 1%;
+  height: auto;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.btn-readmore {
+  transition: all 0.5s;
+  position: relative;
+  top: 1em;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #42af41;
+  padding: 0.6em 0.6em;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-readmore span {
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.btn-readmore span:after {
+  content: '\0bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -25px;
+  transition: 0.2s;
+}
+
+.btn-readmore:hover span {
+  padding-right: 25px;
+}
+
+.btn-readmore:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn-readmore:hover {
+  background-color: #328732;
+}
+
+.btn-readmore:active {
+  position: relative;
+  top: 1.05em;
+}
+
+.col33 {
+  width: 30%;
+  display: inline-block;
+  margin: 0 1%;
+  height: auto;
+  vertical-align: top;
+}
+
+.col50 {
+  width: 45%;
+  display: inline-block;
+  margin: 0 1%;
+  height: auto;
+  vertical-align: top;
+}
+
+.col25 li p {
+  text-align: left;
+}
+
+.col50 ul, .col25 ul {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+footer {
+  background-color: #3e3e3f;
+}
+
+footer h2 {
+  color: #ffffff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .row {
+  margin-bottom: 0;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.copyright {
+  background-color: #ddd;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 20px;
+}

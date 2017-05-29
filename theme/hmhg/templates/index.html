@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron"></div>
+<div class="row">
+  <div class="col25">
+    <h2>Example Event</h2>
+    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+    <a href="#" class="btn-readmore"><span>Read More</span></a>
+  </div>
+  <div class="col25">
+    <h2>Example Event</h2>
+    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+    <a href="#" class="btn-readmore"><span>Read More</span></a>
+  </div>
+  <div class="col25">
+    <h2>Example Event</h2>
+    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+    <a href="#" class="btn-readmore"><span>Read More</span></a>
+  </div>
+  <div class="col25">
+    <h2>Example Event</h2>
+    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+    <a href="#" class="btn-readmore"><span>Read More</span></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col50">
+    <h2>About Us</h2>
+    <p>Holcombe Moor Heritage Group is an archaelogical group, based around the Holcombe Valley (as the name would suggest). Currently we are running an excavation at Bottoms Mill. We are a voluntary organisation, so volunteers are always welcome!</p>
+    <a href="#" class="btn-readmore"><span>Read More</span></a>
+  </div>
+  <div class="col25">
+    <h2>Projects</h2>
+    <ul>
+      {% for article in articles %}
+      {% if article.category.name.lower() == 'projects' %}
+      <li>
+        <a href="{{ article.url }}"><h3>{{ article.title  }}</h3></a>
+        <p>{{ article.summary  }}</p>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock content %}
