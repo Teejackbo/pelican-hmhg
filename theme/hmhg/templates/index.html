@@ -2,31 +2,26 @@
 {% block content %}
 <div class="jumbotron"></div>
 <div class="row">
+  {% for category, articles in categories %}
+    {% if category.name.lower() == 'events' %}
+      {% for article in articles[:4] %}
   <div class="col25">
-    <h2>Example Event</h2>
-    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-    <a href="#" class="btn-readmore"><span>Read More</span></a>
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.summary }}</p>
+    <a href="{{ article.url }}" class="btn-readmore"><span>Read More</span></a>
   </div>
-  <div class="col25">
-    <h2>Example Event</h2>
-    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-    <a href="#" class="btn-readmore"><span>Read More</span></a>
-  </div>
-  <div class="col25">
-    <h2>Example Event</h2>
-    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-    <a href="#" class="btn-readmore"><span>Read More</span></a>
-  </div>
-  <div class="col25">
-    <h2>Example Event</h2>
-    <p>In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-    <a href="#" class="btn-readmore"><span>Read More</span></a>
-  </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
 </div>
 <div class="row">
-  <div class="col50">
+  <div class="col75">
     <h2>About Us</h2>
-    <p>Holcombe Moor Heritage Group is an archaelogical group, based around the Holcombe Valley (as the name would suggest). Currently we are running an excavation at Bottoms Mill. We are a voluntary organisation, so volunteers are always welcome!</p>
+    {% for page in pages %}
+      {% if page.slug == 'about' %}
+        {{ page.summary }}
+      {% endif %}
+    {% endfor %}
     <a href="#" class="btn-readmore"><span>Read More</span></a>
   </div>
   <div class="col25">
@@ -34,9 +29,10 @@
     <ul>
       {% for article in articles %}
       {% if article.category.name.lower() == 'projects' %}
-      <li>
+      <li class="clearfix">
         <a href="{{ article.url }}"><h3>{{ article.title  }}</h3></a>
-        <p>{{ article.summary  }}</p>
+        {% if article.image %}<img src="/theme/images/{{ article.image }}">{% endif %}
+        <p>{{ article.summary }}</p>
       </li>
       {% endif %}
       {% endfor %}
