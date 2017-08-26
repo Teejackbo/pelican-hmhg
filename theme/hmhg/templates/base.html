@@ -6,23 +6,36 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway|Roboto" rel="stylesheet" />
     <link href="{{ SITEURL }}/theme/css/hmhg.css" type="text/css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/navbarScript.js"></script>
     <title>Holcombe Moor Heritage Group</title>
     {% endblock head %}
   </head>
   <body>
     <header>
-      <center>
-        <h1>Holcombe Moor Heritage Group</h1>
-      </center>
+      <img src="images/HMHG_Logo.png" class="hidden-small">
+      <h1>Holcombe Moor Heritage Group</h1>
     </header>
     <nav>
-      <center>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Events</a>
-        <a href="#">Contact Us</a>
-      </center>
+      <div class="dropdown visible-tiny">
+        <i class="fa fa-bars fa-2x"></i>
+        <div class="dropdown-content">
+          <div class="navbarContainer">
+            <a href="index.html" class='current-page'>Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-tiny">
+        <a href="index.html" class='current-page'>Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
     </nav>
     {% block content %}
     {% endblock %}
@@ -50,8 +63,8 @@
         </div>
         <div class="col33">
           <h2>Contact Us</h2>
-          <i class="fa fa-facebook-square fa-3x"></i>
-          <i class="fa fa-twitter-square fa-3x"></i>
+          <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a>
+          <a href="https://twitter.com/hmhg_arch"><i class="fa fa-twitter-square fa-3x"></i></a>
         </div>
       </div>
     </footer>

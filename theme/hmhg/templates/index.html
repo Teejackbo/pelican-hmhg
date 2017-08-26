@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron"></div>
-<div class="row">
+<div class="row events">
   {% for category, articles in categories %}
     {% if category.name.lower() == 'events' %}
       {% for article in articles[:4] %}
   <div class="col25">
     <h2>{{ article.title }}</h2>
     <p>{{ article.summary }}</p>
-    <a href="{{ article.url }}" class="btn-readmore"><span>Read More</span></a>
+    <div class="btn">
+      <a href="{{ article.url }}" class="btn-readmore">
+        <span>Read More</span>
+      </a>
+    </div>
   </div>
       {% endfor %}
     {% endif %}
@@ -24,14 +28,13 @@
     {% endfor %}
     <a href="#" class="btn-readmore"><span>Read More</span></a>
   </div>
-  <div class="col25">
+  <div class="col25 projects">
     <h2>Projects</h2>
     <ul>
       {% for article in articles %}
       {% if article.category.name.lower() == 'projects' %}
       <li class="clearfix">
         <a href="{{ article.url }}"><h3>{{ article.title  }}</h3></a>
-        {% if article.image %}<img src="/theme/images/{{ article.image }}">{% endif %}
         <p>{{ article.summary }}</p>
       </li>
       {% endif %}
