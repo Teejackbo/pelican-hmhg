@@ -185,29 +185,24 @@ nav {
   padding: 0.6em 0.6em;
   border-radius: 5px;
   font-family: "Roboto", sans-serif; }
-
-.btn-readmore span {
-  display: inline-block;
-  position: relative;
-  transition: 0.2s; }
-
-.btn-readmore span:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -25px;
-  transition: 0.2s; }
-
-.btn-readmore:hover span {
-  padding-right: 25px; }
-
-.btn-readmore:hover span:after {
-  opacity: 1;
-  right: 0; }
-
-.btn-readmore:hover {
-  background-color: #328732; }
+  .btn-readmore span {
+    display: inline-block;
+    position: relative;
+    transition: 0.2s; }
+  .btn-readmore span:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0.2s; }
+  .btn-readmore:hover span {
+    padding-right: 25px; }
+  .btn-readmore:hover span:after {
+    opacity: 1;
+    right: 0; }
+  .btn-readmore:hover {
+    background-color: #328732; }
 
 /*Footer */
 footer {
