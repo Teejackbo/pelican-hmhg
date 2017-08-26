@@ -387,16 +387,14 @@ footer {
   border: none;
   height: auto;
   color: white; }
-
-.cal-settings h2 {
-  display: inline-block;
-  padding: 1% 2%;
-  cursor: pointer;
-  user-select: none; }
-
-.cal-settings h2:hover {
-  border-radius: 3px;
-  background-color: #328732; }
+  .cal-settings h2 {
+    display: inline-block;
+    padding: 1% 2%;
+    cursor: pointer;
+    user-select: none; }
+    .cal-settings h2:hover {
+      border-radius: 3px;
+      background-color: #328732; }
 
 .cal-selected {
   border-radius: 3px;
@@ -422,12 +420,11 @@ footer {
   header {
     text-align: center;
     height: 4em; }
-
-  header h1 {
-    font-size: 1.2em;
-    display: inline-block;
-    margin: auto;
-    right: 0; }
+    header h1 {
+      font-size: 1.2em;
+      display: inline-block;
+      margin: auto;
+      right: 0; }
 
   footer .col33 {
     margin-bottom: 0; }
@@ -478,11 +475,10 @@ footer {
 
   header {
     text-align: center; }
-
-  header h1 {
-    display: inline-block;
-    margin: auto;
-    right: 0; }
+    header h1 {
+      display: inline-block;
+      margin: auto;
+      right: 0; }
 
   .projects {
     width: 30%; }
