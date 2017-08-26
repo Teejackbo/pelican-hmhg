@@ -207,19 +207,15 @@ nav {
 /*Footer */
 footer {
   background-color: #3e3e3f; }
-
-footer h2 {
-  color: #ffffff; }
-
-footer ul {
-  list-style: none;
-  padding: 0 0 1em 0; }
-
-footer a {
-  text-decoration: none; }
-
-footer f.row {
-  margin-bottom: 0; }
+  footer h2 {
+    color: #ffffff; }
+  footer ul {
+    list-style: none;
+    padding: 0 0 1em 0; }
+  footer a {
+    text-decoration: none; }
+  footer f.row {
+    margin-bottom: 0; }
 
 .fa-facebook-square {
   color: #3b5998; }
