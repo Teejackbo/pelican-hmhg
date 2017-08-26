@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   var blowUp = function(element) {
     if ($(element).attr('src') === $(gallery).find(">:nth-child(2)").find(">:first-child").attr('src')) {
-      leftArrow.css('color', '#999999');
+      leftArrow.css('color', '#848484');
     } else {
       leftArrow.css('color', '#ffffff');
     }
@@ -52,4 +52,24 @@ $(document).ready(function() {
     $(lightbox).attr('src', String($(element).attr("src")));
     container.css('display', 'table');
   }
+
+  $(document).keydown(function(e) {
+    if(container.css("display") !== "none") {
+      if (e.which == 37) {
+        if ($(curImg).attr('src') !== $(gallery).find(">:nth-child(2)").find(">:first-child").attr('src')) {
+          curImg = $(curImg).parent().prev().find(">:first-child");
+        }
+        blowUp(curImg);
+      }
+      if (e.which == 39) {
+        if ($(curImg).attr('src') !== $(gallery).find(">:last-child").find(">:first-child").attr('src')) {
+          curImg = $(curImg).parent().next().find(">:first-child");
+        }
+        blowUp(curImg);
+      }
+      if (e.which == 27) {
+        container.hide();
+      }
+    }
+  });
 });
