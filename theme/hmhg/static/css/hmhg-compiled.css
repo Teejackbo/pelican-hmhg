@@ -120,23 +120,25 @@ nav {
   display: inline-block;
   margin: 0 auto; }
 
-.col25 img {
-  float: left;
-  height: auto;
-  width: 100%;
-  margin: 4em auto;
-  padding-right: 1em; }
-.col25 li {
-  border-top: 1px solid gray;
-  padding-bottom: 1em; }
-.col25 li:first-child {
-  border: none; }
-.col25 li p {
-  text-align: left; }
-.col25 ul {
-  list-style: none;
-  margin: auto;
-  padding: 0; }
+.col25 {
+  width: 20%; }
+  .col25 img {
+    float: left;
+    height: auto;
+    width: 100%;
+    margin: 4em auto;
+    padding-right: 1em; }
+  .col25 li {
+    border-top: 1px solid gray;
+    padding-bottom: 1em; }
+  .col25 li:first-child {
+    border: none; }
+  .col25 li p {
+    text-align: left; }
+  .col25 ul {
+    list-style: none;
+    margin: auto;
+    padding: 0; }
 
 .col33 {
   width: 30%; }
