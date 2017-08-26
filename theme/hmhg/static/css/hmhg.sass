@@ -141,12 +141,9 @@ nav
   margin: 5% 12.5%
   text-align: center
 
-
-.col25
-  width: 20%
+.col25, .col33, .col50, .col66, .col75
   display: inline-block
   margin: 0 1%
-  height: 100%
   vertical-align: top
 
 
@@ -156,67 +153,54 @@ nav
   margin: 0 auto
 
 
+.col25
+    width: 20%
+
+  img
+    float: left
+    height: auto
+    width: 100%
+    margin: 4em auto
+    padding-right: 1em
+
+  li
+    border-top: 1px solid gray
+    padding-bottom: 1em
+
+  li:first-child
+    border: none
+
+  li p
+    text-align: left
+
+  ul
+    list-style: none
+    margin: auto
+    padding: 0
+
+
 .col33
   width: 30%
-  display: inline-block
-  margin: 0 1%
-  height: auto
-  vertical-align: top
 
 
 .col50
   width: 47%
-  display: inline-block
-  margin: 0 1%
-  height: auto
-  vertical-align: top
+
+  ul
+    list-style: none
+    margin: auto
+    padding: 0
 
 
 .col75
   width: 65%
-  display: inline-block
-  margin: 0 1%
-  vertical-align: top
 
-
-.col75 p
-  text-align: left
-
-
-.col25 img
-  float: left
-  height: auto
-  width: 100%
-  margin: 4em auto
-  padding-right: 1em
+  p
+    text-align: left
 
 
 .col66
   width: 63%
-  display: inline-block
-  margin: 0 1%
-  height: auto
-  vertical-align: top
-
-
-.col25 li
-  border-top: 1px solid gray
-  padding-bottom: 1em
-
-
-.col25 li:first-child
-  border: none
-
-
-.col25 li p
-  text-align: left
-
-
-.col50 ul, .col25 ul
-  list-style: none
-  margin: auto
-  padding: 0
-
 
 
 /*Homepage events*/
