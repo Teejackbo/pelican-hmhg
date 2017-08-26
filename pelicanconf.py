@@ -8,6 +8,8 @@ SITEURL = ''
 THEME = u'theme/hmhg'
 ARTICLE_SAVE_AS = u'{category}/{slug}.html'
 ARTICLE_URL = u'{category}/{slug}.html'
+PAGE_SAVE_AS = u'{slug}/index.html'
+PAGE_URL = u'{slug}'
 
 PATH = 'content'
 

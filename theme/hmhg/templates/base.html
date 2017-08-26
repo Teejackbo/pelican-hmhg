@@ -21,20 +21,18 @@
         <i class="fa fa-bars fa-2x"></i>
         <div class="dropdown-content">
           <div class="navbarContainer">
-            <a href="index.html" class='current-page'>Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="/" {% if not page and not article %}class='current-page'{% endif %}>Home</a>
+            {% for pg in pages %}
+            <a href="/{{ pg.url }}" {% if pg == page %}class='current-page'{% endif %}>{{ pg.title }}</a>
+            {% endfor %}
           </div>
         </div>
       </div>
       <div class="hidden-tiny">
-        <a href="index.html" class='current-page'>Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="events.html">Events</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="/" {% if not page and not article %}class='current-page'{% endif %}>Home</a>
+        {% for pg in pages %}
+        <a href="/{{ pg.url }}" {% if pg == page %}class='current-page'{% endif %}>{{ pg.title }}</a>
+        {% endfor %}
       </div>
     </nav>
     {% block content %}
