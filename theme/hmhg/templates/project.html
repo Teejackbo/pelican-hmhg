@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row long-text">
+  <h2>{{ article.title }}</h2>
+  <p>{{ article.content }}</p>
+</div>
+
+<div class='row gallery'>
+  <h2>Gallery</h2>
+  {% for path in article.gallery %}
+  <div class='col25'>
+    <img class='gallery-img' src='/{{ path }}'>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}
+
+{% block postfooter %}
+<div class='gallery-container'>
+  <div class='cross'>x</div>
+  <div class='left arrow'><</div>
+  <div class='lightbox-outer'>
+    <div class='lightbox-inner'>
+      <img class='lightbox'>
+    </div>
+  </div>
+  <div class='right arrow'>></div>
+</div>
+{% endblock %}
