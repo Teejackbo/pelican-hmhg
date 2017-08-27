@@ -181,11 +181,17 @@ nav {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
   flex: 1 1 0;
   height: unset;
   width: unset; }
 
 .events .col25 p {
+  -webkit-box-flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto; }
 
 .btn-readmore {
