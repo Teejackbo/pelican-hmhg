@@ -1,5 +1,6 @@
 /*Variables*/
 $hmhg-green: #42af41
+$hmhg-grey: #3e3e3f
 $roboto: "Roboto", sans-serif
 $raleway: "Raleway", sans-serif
 
@@ -63,7 +64,7 @@ img
 /*Header*/
 header
   width: 100%
-  background-color: #3e3e3f
+  background-color: $hmhg-grey
   +display-flex
 
   img
@@ -281,7 +282,7 @@ nav
 
 /*Footer*/
 footer
-  background-color: #3e3e3f
+  background-color: $hmhg-grey
 
   h2
     color: #ffffff
@@ -472,8 +473,8 @@ footer
 
 
 .today
-  background-color: $hmhg-green
-  color: #fff
+  border: solid $hmhg-green 2px
+  color: $hmhg-green
 
 
 .cal-year-container

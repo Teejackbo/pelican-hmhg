@@ -383,8 +383,8 @@ footer {
   color: grey; }
 
 .today {
-  background-color: #42af41;
-  color: #fff; }
+  border: solid #42af41 2px;
+  color: #42af41; }
 
 .cal-year-container {
   display: none; }
