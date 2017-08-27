@@ -12,6 +12,13 @@ $raleway: "Raleway", sans-serif
   display: flex
 
 
+=flex($flex-prop)
+  -webkit-box-flex: $flex-prop
+  -webkit-flex: $flex-prop
+  -ms-flex: $flex-prop
+  flex: $flex-prop
+
+
 
 /*Global Styling*/
 html
@@ -227,13 +234,13 @@ nav
 .events .col25
   +display-flex
   flex-direction: column
-  flex: 1 1 0
+  +flex(1 1 0)
   height: unset
   width: unset
 
 
 .events .col25 p
-  flex: 1 0 auto
+  +flex(1 0 auto)
 
 
 .btn-readmore
