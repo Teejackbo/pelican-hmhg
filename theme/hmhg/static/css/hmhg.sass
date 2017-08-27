@@ -4,6 +4,14 @@ $roboto: "Roboto", sans-serif
 $raleway: "Raleway", sans-serif
 
 
+/*Mixins*/
+=flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+
 
 /*Global Styling*/
 html
@@ -49,7 +57,7 @@ img
 header
   width: 100%
   background-color: #3e3e3f
-  display: flex
+  +flex
 
   img
     width: 8%
@@ -212,12 +220,12 @@ nav
 
 .events
   margin-bottom: 0%
-  display: flex
+  +flex
   flex-wrap: wrap
 
 
 .events .col25
-  display: flex
+  +flex
   flex-direction: column
   flex: 1 1 0
   height: unset
@@ -367,7 +375,7 @@ footer
   height: auto
   margin: auto
   padding: auto
-  display: flex
+  +flex
 
 
 .cross
