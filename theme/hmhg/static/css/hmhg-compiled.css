@@ -300,7 +300,7 @@ footer {
   top: 0;
   left: calc(100% - 3rem);
   cursor: pointer;
-  font-family: "Roboto"; }
+  font-family: "Roboto", sans-serif; }
 
 .arrow {
   font-size: 10rem;
