@@ -1,0 +1,55 @@
+.buttons
+  margin: 0% 12.5%
+
+
+.events
+  margin-bottom: 0%
+  +display-flex
+  flex-wrap: wrap
+
+
+.events .col25
+  +display-flex
+  flex-direction: column
+  +flex(1 1 0)
+  height: unset
+  width: unset
+
+
+.events .col25 p
+  +flex(1 0 auto)
+
+
+.btn-readmore
+  transition: all 0.5s
+  position: relative
+  top: 1em
+  text-decoration: none
+  color: #ffffff
+  background-color: $hmhg-green
+  padding: 0.6em 0.6em
+  border-radius: 5px
+  font-family: $roboto
+
+  span
+    display: inline-block
+    position: relative
+    transition: 0.2s
+
+  span:after
+    content: '\0bb'
+    position: absolute
+    opacity: 0
+    top: 0
+    right: -25px
+    transition: 0.2s
+
+  &:hover span
+    padding-right: 25px
+
+  &:hover span:after
+    opacity: 1
+    right: 0
+
+  &:hover
+    background-color: #328732
