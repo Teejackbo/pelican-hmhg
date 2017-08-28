@@ -1,0 +1,71 @@
+.gallery-container
+  z-index: 1
+  display: none
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background-color: rgba(0,0,0,0.5)
+  position: fixed
+
+
+.lightbox-outer
+  display: table-cell
+  vertical-align: middle
+  margin: auto
+
+
+.lightbox-inner
+  max-width: 80%
+  min-width: 20%
+  max-height: 90vh
+  min-height: 10vh
+  margin: auto
+  overflow: hidden
+
+
+.lightbox
+  max-width: 100%
+  max-height: 100%
+  width: auto
+  height: auto
+  margin: auto
+  padding: auto
+  +display-flex
+
+
+.cross
+  font-size: 5rem
+  width: 3rem
+  color: white
+  position: fixed
+  top: 0
+  left: calc(100% - 3rem)
+  cursor: pointer
+  font-family: $roboto
+
+
+.arrow
+  font-size: 10rem
+  line-height: 10rem
+  color: white
+  position: fixed
+  height: 10rem
+  width: 6rem
+  padding: 0
+  margin: 0
+  top: calc(50% - 5rem)
+  cursor: pointer
+  user-select: none
+
+
+.left
+  left: calc(10% - 7rem)
+
+
+.right
+  left: calc(90% + 2rem)
+
+
+.gallery-img:hover
+  cursor: pointer
