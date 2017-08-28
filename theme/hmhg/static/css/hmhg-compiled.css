@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*Variables */
-/*Mixins */
+/*Variables and Mixins */
 /*Global Styling */
 html {
   box-sizing: border-box; }
@@ -32,7 +31,7 @@ img {
 .long-text p {
   text-align: left; }
 
-/*Header */
+/*Header and Nav Bar */
 header {
   width: 100%;
   background-color: #3e3e3f;
@@ -52,7 +51,6 @@ header {
     right: 4.5%;
     padding: 2% 0; }
 
-/*Nav Bar */
 nav {
   width: 100%;
   background-color: #42af41;
